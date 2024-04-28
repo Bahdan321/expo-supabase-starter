@@ -96,7 +96,7 @@ export default function SignUp() {
 	}
 
 	return (
-		<SafeAreaView className='flex-1 flex justify-around  bg-black'>
+		<SafeAreaView className='flex-1 flex justify-around bg-black'>
 			<KeyboardAvoidingView behavior='padding'>
 				<View className='space-y-0' >
 					<Text style={{ fontSize: wp('18'), }} className='text-center text-1xl font-bold text-gray-700'>
