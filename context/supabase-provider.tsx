@@ -23,9 +23,9 @@ export const SupabaseContext = createContext<SupabaseContextProps>({
 	user: null,
 	session: null,
 	initialized: false,
-	signUp: async () => {},
-	signInWithPassword: async () => {},
-	signOut: async () => {},
+	signUp: async () => { },
+	signInWithPassword: async () => { },
+	signOut: async () => { },
 });
 
 export const useSupabase = () => useContext(SupabaseContext);
@@ -81,7 +81,7 @@ export const SupabaseProvider = ({ children }: SupabaseProviderProps) => {
 		const inProtectedGroup = segments[0] === "(protected)";
 
 		if (session && !inProtectedGroup) {
-			router.replace("/(protected)/home");
+			router.replace("/(protected)/profile");
 		} else if (!session) {
 			router.replace("/(public)/welcome");
 		}

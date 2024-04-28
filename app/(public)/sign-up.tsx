@@ -121,7 +121,7 @@ export default function SignUp() {
 								render={({ field }) => (
 									<FormInput
 										label="Email"
-										placeholder="Email"
+										placeholder="maksim2003@email.com"
 										autoCapitalize="none"
 										autoComplete="email"
 										autoCorrect={false}
