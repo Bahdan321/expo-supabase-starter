@@ -54,7 +54,7 @@ export default function SignIn() {
 			<KeyboardAvoidingView behavior='padding'>
 				<View className="mx-2">
 					<TouchableOpacity onPress={() => {
-						router.replace("/sign-up");
+						router.push("/sign-up");
 					}}>
 						<Ionicons name='arrow-back' color='gray' size={30} />
 					</TouchableOpacity>

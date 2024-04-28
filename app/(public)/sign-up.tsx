@@ -178,11 +178,11 @@ export default function SignUp() {
 								<Muted
 									className="text-center"
 									onPress={() => {
-										router.replace("/sign-in");
+										router.push("/sign-in");
 									}}
 								>
-									Already have an account?{" "}
-									<Muted className="text-background">Sign in</Muted>
+									Уже есть аккаунт?{" "}
+									<Muted className="text-background">Войти</Muted>
 								</Muted>
 								<View>
 									<View className='flex-row justify-center'>
